@@ -1,0 +1,54 @@
+{
+    "projects":[
+        {
+            "id":0,
+            "project_name":"A Random Quote Generator",
+            "description":"A program that displays a randomly selected quote each time the user clicks a button.",
+            "technologies": ["HTML","Javascript","CSS"],
+            "live_link":"https://liux3260.github.io/Random-quote-generator-v1.github.io/",
+            "github_link":"https://github.com/liux3260/Random-quote-generator-v1.github.io",
+            "image_urls":["/images/Random_quote_generator_1.png","/images/Random_quote_generator_2.png"]
+
+        },
+        {
+            "id":1,
+            "project_name":"List Pagination and Filtering",
+            "description":"A program that divides a long list into a series of 'pages' and improve the user experience of a web page.",
+            "technologies": ["HTML","Javascript","CSS"],
+            "live_link":"https://liux3260.github.io/list_pagination_and_filtering-v1.github.io/",
+            "github_link":"https://github.com/liux3260/list_pagination_and_filtering-v1.github.io",
+            "image_urls":["/images/list_pagination_and_filtering_1.png","/images/list_pagination_and_filtering_2.png"]
+
+        },
+        {
+            "id":2,
+            "project_name":"Interactive Form",
+            "description":"A web-based interactive registration form application for a fictional conference called 'FullStack Conf.'",
+            "technologies": ["HTML","Javascript","CSS"],
+            "live_link":"https://liux3260.github.io/interactive-form-v2.github.io/",
+            "github_link":"https://github.com/liux3260/interactive-form-v2.github.io",
+            "image_urls":["/images/interactive-form_1.png","/images/interactive-form_2.png"]
+
+        },
+        {
+            "id":3,
+            "project_name":"OOP Game Show App",
+            "description":"A browser-based, word guessing game: 'Phrase Hunter' that let a player tries to guess the phrase by selecting individual letters from an onscreen keyboard.",
+            "technologies": ["HTML","Javascript","CSS"],
+            "live_link":"https://liux3260.github.io/oop_game-v2.github.io/",
+            "github_link":"https://github.com/liux3260/oop_game-v2.github.io",
+            "image_urls":["/images/oop_game_1.png","/images/oop_game_2.png"]
+
+        },
+        {
+            "id":4,
+            "project_name":"Public API Requests",
+            "description":"An employee directory by communicating with a third-party API (Application Programming Interface).",
+            "technologies": ["HTML","Javascript","CSS"],
+            "live_link":"https://liux3260.github.io/public_api_request-v1.github.io/",
+            "github_link":"https://github.com/liux3260/public_api_request-v1.github.io",
+            "image_urls":["/images/public_api_request_1.png","/images/public_api_request_2.png"]
+
+        }
+    ]
+}
