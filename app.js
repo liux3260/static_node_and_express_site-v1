@@ -8,10 +8,6 @@ app.set('view engine','pug');
 const {projects} = require('./data.json');
 //const {projects} = data;
 
-//const indexRoutes = require('./');
-//const aboutRoutes = require('./about');
-//let projectRoutes = require('./project');
-
 app.get('/',(req,res)=>{
     //const name = req.cookies.username;
     //if(name){
@@ -27,12 +23,16 @@ app.get('/about',(req,res)=>{
     //res.send("Hellow world");
 });
 
-app.get('/project/:projectId',(req,res)=>{
+app.get('/project/:projectId',(req,res,next)=>{
     const {projectId} = req.params;
-    //console.log(projectId);
-    const project = projects[projectId];
-    //console.log(project);
-    res.render("project",{project});
+    if(parseInt(projectId) < projects.length){
+        //console.log(project[projectId]);
+        const project = projects[projectId];
+        res.render("project",{project});
+    }
+    else{
+        next();
+    }
     //res.send("Hellow world");
 });
 
@@ -44,6 +44,7 @@ app.use((req,res,next)=>{
 });
 
 app.use((err,req,res,next)=>{
+    console.error(err.message);
     res.locals.error = err;
     res.status(err.status);
     res.render("error");
